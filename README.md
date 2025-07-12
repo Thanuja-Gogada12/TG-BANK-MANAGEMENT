@@ -28,4 +28,4 @@ TG Bank is a simple yet functional **Bank Management System** developed in **C l
 
 ### 🖥️ Compile:
 ```bash
-gcc bank.c -o bank
+gcc bank -o bank.c
