@@ -12,7 +12,7 @@ typedef struct {
 Account accounts[MAX_ACCOUNTS];
 int accountCount = 0;
 
-// Function to log transactions
+
 void logTransaction(int accNo, char name[], const char* type, float amount) {
     FILE *fp = fopen("transactions.txt", "a");
     if (fp == NULL) {
@@ -24,7 +24,7 @@ void logTransaction(int accNo, char name[], const char* type, float amount) {
 }
 
 
-// Create a new account
+
 void createAccount() {
     if (accountCount >= MAX_ACCOUNTS) {
         printf("Account limit reached.\n");
@@ -39,7 +39,7 @@ void createAccount() {
     printf("Account created successfully!\n");
 }
 
-// Deposit amount
+
 void deposit() {
     int num;
     float amt;
@@ -58,7 +58,7 @@ void deposit() {
     printf("Account not found!\n");
 }
 
-// Withdraw amount
+
 void withdrawMoney() {
     int num;
     float amt;
@@ -81,7 +81,7 @@ void withdrawMoney() {
     printf("Account not found!\n");
 }
 
-// Check balance
+
 void checkBalance() {
     int num;
     printf("Enter account number: ");
@@ -95,7 +95,7 @@ void checkBalance() {
     printf("Account not found!\n");
 }
 
-// View transaction history
+
 void viewTransactionHistory() {
     char line[200];
     FILE *fp = fopen("transactions.txt", "r");
@@ -110,7 +110,7 @@ void viewTransactionHistory() {
     fclose(fp);
 }
 
-// Main menu
+
 int main() {
     int choice;
     do {
